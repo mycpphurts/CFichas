@@ -1,0 +1,1 @@
+# Este ficheiro é um placeholder e será removido para quando sair a ficha 8.
