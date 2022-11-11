@@ -19,5 +19,51 @@
 #include <stdio.h>
 
 int main (int argc, char *argv[]) {
+    float valor1, valor2;
+	char operacao;
+	float resultado;
+	
+	printf("Escreva a sua operacao: ");
+	scanf("%f%c%f", &valor1, &operacao, &valor2);
+	
+	switch(operacao) {
+		case '+': {
+			resultado = valor1+valor2;
+			break;
+		}
+		case '*': {
+			resultado = valor1*valor2;
+			break;
+		}
+			
+		case '/': {
+			resultado = valor1/valor2;
+			break;
+		}
+			
+		case '-': {
+			resultado = valor1-valor2;
+			break;
+		}
+			
+	}
+/*	
+	}
+	if(operacao=='+'){
+		resultado = valor1+valor2;
+	}
+	if(operacao=='/'){
+		resultado = valor1/valor2;
+	}
+	if(operacao=='*' || operacao=='x'){
+		resultado = valor1*valor2;
+	}
+	if(operacao=='-'){
+		resultado = valor1-valor2;
+	}
+	
+	*/
+	printf("O resultado e %f", resultado);
+    
     return 0;
 }
